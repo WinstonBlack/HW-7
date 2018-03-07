@@ -11,13 +11,9 @@ void setup() {
 }
 
 void loop() {
- 
+  // put your main code here, to run repeatedly:
   int sensorValue = analogRead(A0);
-  
-  Serial.println(sensorValue);
-  Serial.println(2 * 1024 / 4);
-  Serial.println();
- 
+
   if (sensorValue > 1 * 1024 / 4) {
     digitalWrite(5, HIGH);
   } else {
